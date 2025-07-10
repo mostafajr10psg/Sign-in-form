@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body class="flex-center">
+    <main class="flex-center">
+      <div class="title">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="content">
+        <div class="free-trail">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form>
+          <div>
+            <input type="text" name="f-name" placeholder="First Name" />
+            <img src="imgs/icon-error.svg" alt="" class="error hidden" />
+            <p class="error hidden">First Name cannot be empty</p>
+          </div>
+          <div>
+            <input type="text" name="l-name" placeholder="Last Name" />
+            <img src="imgs/icon-error.svg" alt="" class="error hidden" />
+            <p class="error hidden">Last Name cannot be empty</p>
+          </div>
+          <div>
+            <input type="email" name="mail" placeholder="Email Address" />
+            <img src="imgs/icon-error.svg" alt="" class="error hidden" />
+            <p class="error hidden mail-msg">Email cannot be empty</p>
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Password" />
+            <img src="imgs/icon-error.svg" alt="" class="error hidden" />
+            <p class="error hidden password-msg">Password cannot be empty</p>
+          </div>
+
+          <button type="submit">Claim your free trial</button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+          <p class="mail-exist"></p>
+        </form>
+      </div>
+    </main>
+
+    <div class="success-email-added hidden">
+      <i class="fa-solid fa-xmark close-icon flex-center"></i>
+      <i class="fa-solid fa-thumbs-up success-icon"></i>
+      <h2>Thank you for subscribe</h2>
+      <p class="subscribe-msg">
+        We will notify you on <span></span> <br />
+        We are very interested in the field of programming. It is the most
+        powerful thing in the world and we want to spread it everywhere.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="master.js"></script>
+  </body>
+</html>
