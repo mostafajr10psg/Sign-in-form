@@ -138,7 +138,7 @@ form {
 
 @media (max-width: 37.5rem) {
   form {
-    padding: 2.2rem;
+    padding: 2.5rem;
   }
 }
 
@@ -160,7 +160,7 @@ form div input {
 
 @media (max-width: 56.25rem) {
   form div input {
-    padding: 1.6rem 2rem;
+    padding: 1.4rem 1.8rem;
   }
 }
 
@@ -174,9 +174,17 @@ form div input:focus {
 
 form div img {
   position: absolute;
-  right: 25px;
+  right: 20px;
   top: 29px;
   transform: translateY(-50%);
+}
+
+@media (max-width: 31.25rem) {
+  form div img {
+    width: 20px;
+    right: 16px;
+    top: 26px;
+  }
 }
 
 form div p {
@@ -185,7 +193,7 @@ form div p {
   font-style: italic;
   color: var(--red-color);
   font-weight: 500;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 @media (max-width: 37.5rem) {
@@ -205,7 +213,7 @@ form div .password-terms {
   }
 }
 
-button {
+button[type="submit"] {
   width: 100%;
   padding: 1.8rem 0;
   background-color: rgb(56 204 140);
@@ -214,7 +222,9 @@ button {
   outline: none;
   border-bottom: 4px solid rgb(0 0 0 / 15%);
   border-radius: var(--b-rad-6);
+  font-family: unset;
   font-size: 1.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
@@ -224,13 +234,13 @@ button {
 }
 
 @media (max-width: 37.5rem) {
-  button {
+  button[type="submit"] {
     font-size: 1.2rem;
   }
 }
 /* 1000px */
 @media (min-width: 62.5rem) {
-  button:hover {
+  button[type="submit"]:hover {
     background-color: rgb(56 204 140 / 70%);
   }
 }
@@ -264,7 +274,7 @@ form .terms span {
   transform: translateX(-50%);
   background-color: rgb(70 70 70);
   color: white;
-  padding: 4px 29px;
+  padding: 0.4rem 2.9rem;
   border-radius: 4px;
   font-size: 1.2rem;
   transition: 0.3s opacity, 0.3s bottom;
@@ -286,14 +296,22 @@ form .terms span {
   position: absolute;
   right: 0;
   top: 0;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: red;
   color: white;
   font-size: 2rem;
   transform: translate(50%, -50%);
   cursor: pointer;
+}
+
+@media (max-width: 31.25rem) {
+  .success-email-added .close-icon {
+    width: 5.5rem;
+    border-radius: initial;
+    transform: translate(0, 0);
+  }
 }
 
 .success-email-added .success-icon {

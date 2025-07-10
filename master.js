@@ -100,6 +100,7 @@ document.forms[0].onsubmit = (e) => {
       mailAdded.classList.remove("hidden");
       mailName.textContent = mail.value;
       mailName.style.fontWeight = "bold";
+      mailName.style.wordBreak = "break-word";
       overlay.classList.remove("hidden");
 
       closeIcon.addEventListener("click", () => {
