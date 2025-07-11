@@ -114,7 +114,3 @@ document.forms[0].onsubmit = (e) => {
     }
   }
 };
-
-fName.value = "Mostafa";
-lName.value = "Samir";
-password.value = "Mostafajr10";
