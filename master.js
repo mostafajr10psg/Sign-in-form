@@ -1,21 +1,21 @@
-let fName = document.querySelector(`input[name="f-name"]`);
-let lName = document.querySelector(`input[name="l-name"]`);
-let mail = document.querySelector(`input[name="mail"]`);
-let mailMsg = document.querySelector(`form div .mail-msg`);
-let password = document.querySelector(`input[name="password"]`);
-let passwordMsg = document.querySelector(`form div .password-msg`);
-let allInputFields = document.querySelectorAll(`form div input`);
+const fName = document.querySelector(`input[name="f-name"]`);
+const lName = document.querySelector(`input[name="l-name"]`);
+const mail = document.querySelector(`input[name="mail"]`);
+const mailMsg = document.querySelector(`form div .mail-msg`);
+const password = document.querySelector(`input[name="password"]`);
+const passwordMsg = document.querySelector(`form div .password-msg`);
+const allInputFields = document.querySelectorAll(`form div input`);
 
-let mailExist = document.querySelector(`.mail-exist`);
-let mailAdded = document.querySelector(`.success-email-added`);
-let subscribeMsg = document.querySelector(
+const mailExist = document.querySelector(`.mail-exist`);
+const mailAdded = document.querySelector(`.success-email-added`);
+const subscribeMsg = document.querySelector(
   `.success-email-added .subscribe-msg`
 );
-let mailName = document.querySelector(
+const mailName = document.querySelector(
   `.success-email-added .subscribe-msg span`
 );
-let closeIcon = document.querySelector(".success-email-added .close-icon");
-let overlay = document.querySelector(`.overlay`);
+const closeBtn = document.querySelector(".success-email-added .close-button");
+const overlay = document.querySelector(`.overlay`);
 
 function showInputErrors(input) {
   input.classList.add("hidden-placeholder");
@@ -103,7 +103,7 @@ document.forms[0].onsubmit = (e) => {
       mailName.style.wordBreak = "break-word";
       overlay.classList.remove("hidden");
 
-      closeIcon.addEventListener("click", () => {
+      closeBtn.addEventListener("click", () => {
         mailAdded.classList.add("hidden");
         overlay.classList.add("hidden");
         for (let input of allInputFields) {

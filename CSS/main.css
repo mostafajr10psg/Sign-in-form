@@ -292,25 +292,28 @@ form .terms span {
   z-index: 100;
 }
 
-.success-email-added .close-icon {
+.success-email-added .close-button {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: red;
-  color: white;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+  top: 25px;
   font-size: 2rem;
-  transform: translate(50%, -50%);
   cursor: pointer;
+  transition: 0.3s;
 }
 
-@media (max-width: 31.25rem) {
-  .success-email-added .close-icon {
-    width: 5.5rem;
-    border-radius: initial;
-    transform: translate(0, 0);
+@media (min-width: 62.5rem) {
+  .success-email-added .close-button {
+    width: 4rem;
+    height: 3rem;
+    right: 15px;
+    top: 15px;
+  }
+
+  .success-email-added .close-button:hover {
+    background-color: red;
+    color: white;
   }
 }
 
